@@ -1,0 +1,126 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+
+/*coding for the top landing section start here*/
+.landing-section{
+    min-height:70vh;
+    background:url("../images/mainImage.JPG");
+    background-size:100% 100%;
+    background-repeat:no-repeat;
+}
+
+/*coding for the top landing section ended here*/
+
+/*coding for the navigation bar start here*/
+a{
+    text-decoration:none;
+}
+li{
+    list-style: none;
+}
+.lg-navigation-bar,.sm-navigation-bar{
+    height:80px;
+    background-color:#E0E0E0;
+}
+.sm-navigation-list{
+    background-color:#E0E0E0;
+}
+.sm-navigation-bar{
+    flex-direction:row;
+}
+.logo-wrapper{
+    flex:5;
+}
+.button-wrapper{
+    flex:1;
+}
+.sm-navigation-list{
+    height:50vh;
+    text-align:center;
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    position:absolute;
+    top:80vh;
+    left:0;
+    right:0;
+}
+
+.sm-navigation-list li{
+    margin-top:20px;
+}
+.sm-navigation-list-wrapper{
+    display:none;
+}
+
+.displayNavigation{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media screen and (max-width:180px){
+    .sm-navigation-bar{
+        flex-direction:column;
+        padding:10px 0px 10px 0px;
+        height:100px;
+    }
+    .logo-wrapper, .button-wrapper{
+        justify-content:center;
+    }
+}
+@media screen and (min-width:768px)
+and (max-width:987px){
+    .lg-navigation-bar li{
+        font-size:10pt;
+        font-weight:bold;
+    }
+}
+/*coding for the navigaion bar ended here*/
+
+
+/*main content coding start here*/
+.main-section{
+    display:flex;
+    column-gap:20px;
+}
+.left{
+    display:flex;
+    flex-direction:column;
+    flex:2;
+}
+.right{
+    display:flex;
+    flex:1;
+}
+.card-body{
+    box-shadow:0 0 15px rgba(0,0,0,0.4);
+    border:none;
+}
+@media screen and (max-width:767px){
+    .main-section{
+        flex-direction:column;
+        row-gap:20px;
+    }
+    .main-description{
+        font-size:14pt;
+    }
+    .location-sub-caption{
+        font-size:12pt;
+        font-weight:400;
+        color:black;
+    }
+}
+/*main content coding ended here*/
+
+/*coding for footer section start here*/
+.footer-nav li{
+    display:inline-block;
+}
+.footer-section{
+    padding-bottom:50px;
+}
+/*coding for the footer section ended here*/
